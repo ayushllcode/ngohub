@@ -1,0 +1,31 @@
+### Health Check
+GET http://localhost:5000/api/health
+
+### Register User
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "password": "password123",
+  "phone": "+91-9876543210"
+}
+
+### Login User
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "rajesh@example.com",
+  "password": "password123"
+}
+
+### Get Campaigns
+GET http://localhost:5000/api/campaigns
+
+### Get Specific Campaign
+GET http://localhost:5000/api/campaigns/CAMPAIGN_ID_HERE
+
+### Get Resources
+GET http://localhost:5000/api/resources/hospitals
